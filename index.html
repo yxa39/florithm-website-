@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florithm — Mobile App Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>Florithm</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#apps">Apps</a>
+        <a href="#contact" class="nav__cta">Contact Us</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#features" class="mobile-link">Features</a>
+      <a href="#apps" class="mobile-link">Apps</a>
+      <a href="#contact" class="mobile-link">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__orb hero__orb--3"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Software Development LLC</p>
+        <h1 class="hero__headline reveal">
+          Apps that<br />
+          <em>elevate</em> everyday<br />
+          life
+        </h1>
+        <p class="hero__sub reveal">
+          We build intuitive mobile applications for lifestyle,<br class="desktop-only" />
+          creative tools, and fashion tech.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#apps" class="btn btn--primary">Explore Our Apps</a>
+          <a href="#about" class="btn btn--ghost">Learn More</a>
+        </div>
+      </div>
+      <div class="hero__scroll">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p class="label">About Florithm</p>
+            <h2>Technology that enhances your everyday life</h2>
+            <p>
+              At Florithm, we believe great software should feel effortless. As a dedicated mobile app development company, we create and publish a diverse range of applications that cater to lifestyle, creative tools, and fashion tech.
+            </p>
+            <p>
+              Our mission is to design intuitive and engaging apps that empower users through innovative features like color analysis, digital styling, and user-generated content. With a focus on thoughtful design and smart technology, we strive to elevate your daily experiences and inspire creativity in everything you do.
+            </p>
+            <a href="#contact" class="btn btn--primary">Get in Touch</a>
+          </div>
+          <div class="about__visual reveal">
+            <div class="about__card about__card--main">
+              <div class="about__stat">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Apps Published</span>
+              </div>
+            </div>
+            <div class="about__card about__card--accent">
+              <div class="about__stat">
+                <span class="stat-number">10k+</span>
+                <span class="stat-label">Happy Users</span>
+              </div>
+            </div>
+            <div class="about__card about__card--small">
+              <div class="about__stat">
+                <span class="stat-number">iOS & Android</span>
+                <span class="stat-label">Platforms</span>
+              </div>
+            </div>
+            <div class="about__badge">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="currentColor"/>
+              </svg>
+              <span>Est. 2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">What We Do</p>
+          <h2>Built for the way you live</h2>
+          <p class="section-sub">Every app we build is rooted in the same principles: beautiful design, smart technology, and genuine utility.</p>
+        </div>
+        <div class="features__grid">
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8M12 17v4"/>
+              </svg>
+            </div>
+            <h3>Intuitive Design</h3>
+            <p>Our apps are crafted with user experience at the core — every interaction feels natural, every flow feels effortless.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3>Smart Technology</h3>
+            <p>Leveraging the latest advancements, our apps feature AI-powered color analysis and digital styling that adapts to you.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 20h9M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+              </svg>
+            </div>
+            <h3>Creative Tools</h3>
+            <p>Unleash your creativity with tools designed for artistic expression — from outfit styling to user-generated content.</p>
+          </div>
+          <div class="feature-card reveal">
+            <div class="feature-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <h3>Community Engagement</h3>
+            <p>Join vibrant communities of users who share your passion for lifestyle and fashion. Collaborate, inspire, and grow together.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPS SHOWCASE -->
+    <section class="apps section" id="apps">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="label">Our Apps</p>
+          <h2>Products we've shipped</h2>
+        </div>
+        <div class="apps__grid">
+          <div class="app-card reveal">
+            <div class="app-card__preview app-card__preview--1">
+              <div class="app-mockup">
+                <div class="app-mockup__screen">
+                  <div class="mockup-ui mockup-ui--palette">
+                    <div class="palette-row">
+                      <span style="background:#C9A96E"></span>
+                      <span style="background:#E8D5B7"></span>
+                      <span style="background:#8B6F47"></span>
+                      <span style="background:#D4A76A"></span>
+                    </div>
+                    <div class="palette-label">Your Color Palette</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="app-card__info">
+              <span class="app-tag">Fashion Tech</span>
+              <h3>Color Analysis</h3>
+              <p>Discover your personal color palette through AI-driven analysis. Style with confidence, dress with intention.</p>
+              <a href="#contact" class="app-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="app-card reveal">
+            <div class="app-card__preview app-card__preview--2">
+              <div class="app-mockup">
+                <div class="app-mockup__screen">
+                  <div class="mockup-ui mockup-ui--wardrobe">
+                    <div class="wardrobe-grid">
+                      <span class="wardrobe-item"></span>
+                      <span class="wardrobe-item"></span>
+                      <span class="wardrobe-item"></span>
+                      <span class="wardrobe-item"></span>
+                    </div>
+                    <div class="palette-label">My Wardrobe</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="app-card__info">
+              <span class="app-tag">Lifestyle</span>
+              <h3>Digital Styling</h3>
+              <p>Organize your wardrobe, plan outfits, and discover new looks. Your personal stylist, in your pocket.</p>
+              <a href="#contact" class="app-link">Learn more →</a>
+            </div>
+          </div>
+          <div class="app-card reveal">
+            <div class="app-card__preview app-card__preview--3">
+              <div class="app-mockup">
+                <div class="app-mockup__screen">
+                  <div class="mockup-ui mockup-ui--community">
+                    <div class="community-feed">
+                      <span class="feed-item"></span>
+                      <span class="feed-item"></span>
+                      <span class="feed-item feed-item--wide"></span>
+                    </div>
+                    <div class="palette-label">Community Feed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="app-card__info">
+              <span class="app-tag">Social</span>
+              <h3>Creative Community</h3>
+              <p>Share your style, discover inspiration, and connect with like-minded individuals across our platform.</p>
+              <a href="#contact" class="app-link">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-banner__inner reveal">
+          <div class="cta-banner__text">
+            <h2>Ready to work together?</h2>
+            <p>Whether you have a question about our apps or want to explore a partnership, we'd love to hear from you.</p>
+          </div>
+          <a href="#contact" class="btn btn--light">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <p class="label">Contact</p>
+            <h2>Let's start a conversation</h2>
+            <p>Have a question, a collaboration idea, or just want to say hello? Reach out — we're always happy to connect.</p>
+            <div class="contact__details">
+              <div class="contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>hello@florithm.com</span>
+              </div>
+              <div class="contact__item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>United States</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact__form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>Florithm</span>
+          </a>
+          <p>Crafting mobile apps that inspire creativity and elevate everyday life.</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4>Company</h4>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#apps">Our Apps</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+          <div class="footer__col">
+            <h4>Connect</h4>
+            <a href="#contact">Contact Us</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Florithm LLC. All rights reserved.</p>
+        <p>Made with care in the USA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
