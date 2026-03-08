@@ -435,8 +435,8 @@ em { font-style: italic; color: var(--accent); }
 
 .apps__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .app-card {
@@ -445,92 +445,26 @@ em { font-style: italic; color: var(--accent); }
   border-radius: var(--radius);
   overflow: hidden;
   transition: border-color 0.3s, transform 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 .app-card:hover {
-  border-color: rgba(201,169,110,0.3);
-  transform: translateY(-6px);
+  border-color: rgba(201,169,110,0.35);
+  transform: translateY(-5px);
 }
 
-.app-card__preview {
-  height: 220px;
+.app-card__icon {
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  font-size: 2.4rem;
 }
 
-.app-card__preview--1 { background: linear-gradient(135deg, #1a1208 0%, #2d1f0a 100%); }
-.app-card__preview--2 { background: linear-gradient(135deg, #0a1220 0%, #0f2030 100%); }
-.app-card__preview--3 { background: linear-gradient(135deg, #0d0d0f 0%, #1a1a20 100%); }
-
-.app-mockup {
-  width: 120px;
-  background: #1c1c20;
-  border-radius: 20px;
-  padding: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-}
-
-.app-mockup__screen {
-  background: #111115;
-  border-radius: 14px;
-  height: 170px;
-  padding: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mockup-ui { width: 100%; text-align: center; }
-
-.palette-row {
-  display: flex;
-  gap: 4px;
-  margin-bottom: 8px;
-  justify-content: center;
-}
-.palette-row span {
-  width: 18px; height: 18px;
-  border-radius: 50%;
-  display: block;
-}
-
-.palette-label {
-  font-size: 7px;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
-
-.wardrobe-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px;
-  margin-bottom: 8px;
-}
-.wardrobe-item {
-  height: 32px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.05);
-  display: block;
-}
-.wardrobe-item:nth-child(1) { background: rgba(201,169,110,0.15); }
-.wardrobe-item:nth-child(3) { background: rgba(139,111,71,0.2); }
-
-.community-feed { margin-bottom: 8px; display: flex; flex-direction: column; gap: 4px; }
-.feed-item {
-  height: 24px;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.06);
-  display: block;
-  width: 60%;
-}
-.feed-item--wide { width: 85%; background: rgba(201,169,110,0.1); }
-
-.app-card__info { padding: 24px; }
+.app-card__info { padding: 20px; flex: 1; }
 
 .app-tag {
   font-size: 0.7rem;
@@ -703,14 +637,23 @@ em { font-style: italic; color: var(--accent); }
 .features__grid .reveal:nth-child(3) { transition-delay: 0.2s; }
 .features__grid .reveal:nth-child(4) { transition-delay: 0.3s; }
 
-.apps__grid .reveal:nth-child(2) { transition-delay: 0.1s; }
-.apps__grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+.apps__grid .reveal:nth-child(2) { transition-delay: 0.05s; }
+.apps__grid .reveal:nth-child(3) { transition-delay: 0.1s; }
+.apps__grid .reveal:nth-child(4) { transition-delay: 0.15s; }
+.apps__grid .reveal:nth-child(5) { transition-delay: 0.2s; }
+.apps__grid .reveal:nth-child(6) { transition-delay: 0.25s; }
+.apps__grid .reveal:nth-child(7) { transition-delay: 0.3s; }
+.apps__grid .reveal:nth-child(8) { transition-delay: 0.35s; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .features__grid { grid-template-columns: repeat(2, 1fr); }
   .apps__grid { grid-template-columns: repeat(2, 1fr); }
   .about__grid { gap: 48px; }
+}
+
+@media (max-width: 860px) {
+  .apps__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -734,7 +677,7 @@ em { font-style: italic; color: var(--accent); }
   .stat-number { font-size: 1.4rem; }
 
   .features__grid { grid-template-columns: 1fr; gap: 16px; }
-  .apps__grid { grid-template-columns: 1fr; }
+  .apps__grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
 
   .cta-banner__inner {
     flex-direction: column;
