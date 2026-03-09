@@ -23,6 +23,14 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+// Privacy accordion
+document.querySelectorAll('.privacy-accordion__trigger').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('open');
+    btn.nextElementSibling.classList.toggle('open');
+  });
+});
+
 // Contact form
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();

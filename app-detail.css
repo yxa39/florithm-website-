@@ -297,6 +297,102 @@
 .back-link:hover { color: var(--text); }
 .back-link svg { width: 14px; height: 14px; }
 
+/* Privacy Policy Accordion */
+.privacy-section {
+  padding: 64px 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.privacy-accordion {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.privacy-accordion__trigger {
+  width: 100%;
+  background: var(--bg-3);
+  border: none;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  transition: background 0.2s;
+}
+.privacy-accordion__trigger:hover { background: rgba(255,255,255,0.04); }
+.privacy-accordion__trigger svg {
+  width: 18px; height: 18px;
+  color: var(--text-muted);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+.privacy-accordion__trigger.open svg { transform: rotate(180deg); }
+
+.privacy-accordion__body {
+  display: none;
+  padding: 32px 28px;
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+}
+.privacy-accordion__body.open { display: block; }
+
+.privacy-content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.privacy-content .effective-date {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  display: block;
+}
+.privacy-content h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 24px 0 8px;
+  font-family: var(--font-sans);
+}
+.privacy-content h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 16px 0 6px;
+  font-family: var(--font-sans);
+}
+.privacy-content p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+.privacy-content ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+.privacy-content ul li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 4px;
+}
+.privacy-content a { color: var(--accent); }
+.privacy-content a:hover { text-decoration: underline; }
+.privacy-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 20px 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .app-hero__inner { flex-direction: column; align-items: flex-start; gap: 24px; }
