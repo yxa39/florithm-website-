@@ -32,16 +32,31 @@ document.querySelectorAll('.privacy-accordion__trigger').forEach(btn => {
 });
 
 // Contact form
-document.getElementById('contactForm').addEventListener('submit', (e) => {
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = 'Message Sent!';
-  btn.style.background = '#4caf7d';
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending...';
   btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Send Message';
-    btn.style.background = '';
+
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    btn.textContent = 'Message Sent!';
+    btn.style.background = '#4caf7d';
+    form.reset();
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  } else {
+    btn.textContent = 'Failed — Try Again';
+    btn.style.background = '#e05a5a';
     btn.disabled = false;
-    e.target.reset();
-  }, 3000);
+  }
 });

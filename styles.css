@@ -463,6 +463,12 @@ em { font-style: italic; color: var(--accent); }
   justify-content: center;
   font-size: 2.4rem;
 }
+.app-card__icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+}
 
 .app-card__info { padding: 20px; flex: 1; }
 
