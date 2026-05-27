@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Read with Booki — Graded English Readers — Florithm LLC</title>
+  <meta name="description" content="Experience the joy of reading in English without the frustration of getting stuck. Booki is your personal reading companion for graded readers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="app-detail.css" />
+</head>
+
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+          <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <span>Florithm</span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#apps">Apps</a>
+        <a href="index.html#contact" class="nav__cta">Contact Us</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#about" class="mobile-link">About</a>
+      <a href="index.html#features" class="mobile-link">Features</a>
+      <a href="index.html#apps" class="mobile-link">Apps</a>
+      <a href="index.html#contact" class="mobile-link">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="app-hero">
+      <div class="container">
+        <a href="index.html#apps" class="back-link" style="margin-bottom:24px;display:inline-flex;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          All Apps
+        </a>
+        <div class="app-hero__inner">
+          <div class="app-hero__icon"><img src="images/icon-read-with-booki.jpg" alt="Read with Booki" /></div>
+          <div class="app-hero__meta">
+            <span class="app-hero__category">Education</span>
+            <h1 class="app-hero__name">Read with Booki</h1>
+            <p class="app-hero__subtitle">Your personal English reading companion</p>
+            <div class="app-hero__stats">
+              <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" /></svg>
+              </div>
+              <span class="rating-num">5.0</span>
+              <span class="rating-count">New</span>
+              <div class="app-hero__divider"></div>
+              <span class="app-hero__price">Free</span>
+              <div class="app-hero__divider"></div>
+              <span class="app-hero__price">iOS</span>
+            </div>
+            <a href="#" target="_blank" rel="noopener" class="app-store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              Download on App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots">
+      <div class="container">
+        <div class="screenshots__track">
+          <div class="screenshot-item"><img src="images/ss-read-with-booki-1.png" alt="Screenshot 1" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/ss-read-with-booki-2.png" alt="Screenshot 2" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/ss-read-with-booki-3.png" alt="Screenshot 3" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/ss-read-with-booki-4.png" alt="Screenshot 4" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-about">
+      <div class="container">
+        <div class="app-about__grid">
+          <div class="app-about__desc">
+            <p class="label">About this app</p>
+            <h2>Experience the joy of reading in English without getting stuck.</h2>
+            <p>Read with Booki immerses you in a beautifully curated library of graded readers, allowing you to enjoy timeless classics and engaging stories that are perfectly matched to your reading level. It’s not about drilling words—it’s about getting lost in a good book with a little bit of smart, guided help along the way.</p>
+            <p>Whether you are just starting out or reading advanced literature, Booki acts as your personal, always-available reading companion hidden right inside the pages.</p>
+            <p><strong>HOW IT WORKS:</strong><br/>
+              1. Chat with Booki to find your reading level.<br/>
+              2. Pick a book from your personalized recommendations.<br/>
+              3. Start reading! Chat with Booki whenever you need a helping hand with the story.<br/>
+            </p>
+            <p>Stop struggling through difficult texts and start enjoying stories in English today. Download Read with Booki and dive into your next great book!</p>
+          </div>
+          <div class="app-features-list">
+            <h3>Key Features</h3>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" /></svg></div>
+              <div class="feature-item__text">
+                <h4>A Library Tailored to You</h4>
+                <p>Discover an ever-growing collection of stories adapted specifically for your English proficiency.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" /></svg></div>
+              <div class="feature-item__text">
+                <h4>Meet Booki: Your Reading Guide</h4>
+                <p>Chat with Booki to get instant grammar breakdowns, plot summaries, or context for whatever chapter you're reading.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" /></svg></div>
+              <div class="feature-item__text">
+                <h4>Frictionless Reading</h4>
+                <p>Long-press any confusing text to get instant, contextual explanations without breaking your reading flow.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" /></svg></div>
+              <div class="feature-item__text">
+                <h4>Smart Level Matching</h4>
+                <p>Booki’s interactive onboarding will have a friendly chat with you to pinpoint your exact reading comfort zone.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7" /></svg></div>
+              <div class="feature-item__text">
+                <h4>Distraction-Free Design</h4>
+                <p>Immerse yourself in a beautifully crafted, ad-free reading interface with customizable fonts and warm reading modes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="more-apps">
+      <div class="container">
+        <p class="label">More from Florithm</p>
+        <div class="more-apps__grid">
+          <a class="more-app-card" href="app-rightread.html">
+            <div class="more-app-card__icon"><img src="images/icon-rightread.jpg" alt="RightRead" loading="lazy" /></div><span class="more-app-card__name">RightRead — Kids Leveled Books</span>
+          </a>
+          <a class="more-app-card" href="app-phonics-cards.html">
+            <div class="more-app-card__icon"><img src="images/icon-phonics-cards.jpg" alt="Phonics Cards" loading="lazy" /></div><span class="more-app-card__name">Phonics Cards</span>
+          </a>
+          <a class="more-app-card" href="app-nexus.html">
+            <div class="more-app-card__icon"><img src="images/icon-nexus.png" alt="Nexus — Career Discovery" loading="lazy" /></div><span class="more-app-card__name">Nexus — Career Discovery</span>
+          </a>
+          <a class="more-app-card" href="app-narcissist.html">
+            <div class="more-app-card__icon"><img src="images/icon-amIanarcissit.png" alt="Am I a Narcissist?" loading="lazy" /></div><span class="more-app-card__name">Am I a Narcissist?</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-section">
+      <div class="container" style="text-align:center;">
+        <a href="privacy-read-with-booki.html" class="app-store-btn" style="display:inline-flex;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          View Privacy Policy
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+              <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg><span>Florithm</span></a>
+          <p>Crafting mobile apps that inspire creativity and elevate everyday life.</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4>Company</h4><a href="index.html#about">About</a><a href="index.html#features">Features</a><a href="index.html#apps">Our Apps</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4><a href="privacy-read-with-booki.html">Privacy Policy</a>
+          </div>
+          <div class="footer__col">
+            <h4>Connect</h4><a href="index.html#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Florithm LLC. All rights reserved.</p>
+        <p>Made with care in the USA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
