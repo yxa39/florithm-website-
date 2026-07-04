@@ -60,3 +60,35 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
     btn.disabled = false;
   }
 });
+
+// Geo Banner Logic
+document.addEventListener('DOMContentLoaded', async () => {
+  const geoBanner = document.getElementById('geoBanner');
+  const geoMessage = document.getElementById('geoMessage');
+  const closeGeoBanner = document.getElementById('closeGeoBanner');
+
+  if (!geoBanner || !geoMessage) return;
+
+  // Check if banner was previously closed
+  if (sessionStorage.getItem('geoBannerClosed') === 'true') {
+    return;
+  }
+
+  try {
+    const response = await fetch('https://ipapi.co/json/');
+    if (!response.ok) throw new Error('Geo API failed');
+    const data = await response.json();
+    
+    if (data.country_name) {
+      geoMessage.textContent = `✨ Welcome! See why users in ${data.country_name} love our apps.`;
+      geoBanner.classList.remove('hidden');
+    }
+  } catch (error) {
+    console.warn('Geolocation failed:', error);
+  }
+
+  closeGeoBanner?.addEventListener('click', () => {
+    geoBanner.classList.add('hidden');
+    sessionStorage.setItem('geoBannerClosed', 'true');
+  });
+});

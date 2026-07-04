@@ -112,6 +112,58 @@ em { font-style: italic; color: var(--accent); }
 
 .btn--full { width: 100%; justify-content: center; }
 
+/* ===== GEO BANNER ===== */
+.geo-banner {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #1a1208;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 101;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: transform 0.4s var(--ease), opacity 0.4s var(--ease), margin-top 0.4s var(--ease);
+}
+
+.geo-banner.hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+  margin-top: -46px; /* Approx height of banner to slide it up */
+  pointer-events: none;
+}
+
+.geo-banner__content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geo-banner__content p {
+  color: #1a1208;
+  margin: 0;
+}
+
+.geo-banner__close {
+  background: transparent;
+  border: none;
+  color: #1a1208;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.geo-banner__close:hover {
+  opacity: 1;
+}
+
 /* ===== NAV ===== */
 .nav {
   position: fixed;
