@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanCrew — Florithm LLC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="app-detail.css" />
+  <meta name="description" content="PlanCrew brings messaging and planning together, so your group can spend less time coordinating and more time together.">
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="PlanCrew — Florithm">
+  <meta property="og:description" content="PlanCrew brings messaging and planning together, so your group can spend less time coordinating and more time together.">
+  <meta property="og:image" content="https://www.florithm.com/images/icon-plancrew.png">
+  <meta property="og:url" content="https://www.florithm.com/app-plancrew.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PlanCrew">
+  <meta name="twitter:description" content="PlanCrew brings messaging and planning together, so your group can spend less time coordinating and more time together.">
+  <meta name="twitter:image" content="https://www.florithm.com/images/icon-plancrew.png">
+
+  <!-- Structured Data for Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PlanCrew",
+    "operatingSystem": "iOS",
+    "applicationCategory": "SocialNetworkingApplication",
+    "applicationSubCategory": "Lifestyle",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+          <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <span>Florithm</span>
+      </a>
+      <nav class="nav__links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#apps">Apps</a>
+        <a href="index.html#contact" class="nav__cta">Contact Us</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav__mobile" id="mobileMenu">
+      <a href="index.html#about" class="mobile-link">About</a>
+      <a href="index.html#features" class="mobile-link">Features</a>
+      <a href="index.html#apps" class="mobile-link">Apps</a>
+      <a href="index.html#contact" class="mobile-link">Contact Us</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="app-hero">
+      <div class="container">
+        <a href="index.html#apps" class="back-link" style="margin-bottom:24px;display:inline-flex;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          All Apps
+        </a>
+        <div class="app-hero__inner">
+          <div class="app-hero__icon"><img src="images/icon-plancrew.png" alt="PlanCrew" /></div>
+          <div class="app-hero__meta">
+            <span class="app-hero__category">Social Networking</span>
+            <h1 class="app-hero__name">PlanCrew</h1>
+            <p class="app-hero__subtitle">Chat, plan, decide together</p>
+            <div class="app-hero__stats">
+              <div class="app-hero__divider"></div>
+              <span class="app-hero__price">Free</span>
+              <div class="app-hero__divider"></div>
+              <span class="app-hero__price">iOS</span>
+            </div>
+            <a href="https://apps.apple.com/us/app/plancrew/id6767430072" class="app-store-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+              </svg>
+              Download on App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screenshots">
+      <div class="container">
+        <div class="screenshots__track">
+          <div class="screenshot-item"><img src="images/ss-plancrew-1.png" alt="PlanCrew Chats Interface" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/ss-plancrew-2.png" alt="PlanCrew Event Details" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/screenshot-plancrew-1.png" alt="PlanCrew Interface Preview 1" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/screenshot-plancrew-2.png" alt="PlanCrew Interface Preview 2" loading="lazy" /></div>
+          <div class="screenshot-item"><img src="images/screenshot-plancrew-3.png" alt="PlanCrew Interface Preview 3" loading="lazy" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-about">
+      <div class="container">
+        <div class="app-about__grid">
+          <div class="app-about__desc">
+            <p class="label">About this app</p>
+            <h2>Chat, plan, and stay in sync</h2>
+            <p>PlanCrew brings messaging and planning together, so your group can spend less time coordinating and more time together.</p>
+            <p>Chat one-on-one or create groups for friends, trips, clubs, teams, and everyday plans. Share messages, photos, voice notes, emojis, and GIFs—all while keeping schedules and event details close to the conversation.</p>
+
+            <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Perfect For:</h3>
+            <ul style="margin-bottom: 2rem; padding-left: 1.5rem; line-height: 1.6;">
+              <li><strong>Friend Groups:</strong> Planning nights out, weekend getaways, and spontaneous hangouts.</li>
+              <li><strong>Travel Crews:</strong> Coordinating trips with shared itineraries, checklists, and calendars.</li>
+              <li><strong>Clubs & Teams:</strong> Managing practice schedules, meetings, and team events.</li>
+              <li><strong>Roommates & Families:</strong> Keeping up with household plans and shared responsibilities.</li>
+              <li><strong>Anyone:</strong> Who wants one place to chat, plan, and stay in sync with their crew.</li>
+            </ul>
+            <p>Whether you're planning a night out, coordinating a trip, managing a club, or simply keeping up with friends, PlanCrew gives your crew one place to chat, plan, and stay in sync.</p>
+          </div>
+          <div class="app-features-list">
+            <h3>Key Features</h3>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <div class="feature-item__text">
+                <h4>Plan Together</h4>
+                <p>Create events in shared chat calendars, add locations and notes, build checklists, invite attendees, and organize recurring plans.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <div class="feature-item__text">
+                <h4>Stay Connected</h4>
+                <p>Send real-time direct and group messages. Reply in threads, share media, react with emojis, and keep every conversation organized.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <div class="feature-item__text">
+                <h4>Build Your Crew</h4>
+                <p>Find friends, create groups, invite members, personalize your profile, and organize chats into folders.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <div class="feature-item__text">
+                <h4>Share the Moment</h4>
+                <p>Post photos, explore group galleries, and save collections you want to revisit.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M5 13l4 4L19 7" />
+                </svg></div>
+              <div class="feature-item__text">
+                <h4>PlanCrew Plus</h4>
+                <p>Messaging, groups, emojis, photos, voice messages, and basic calendar features remain free. PlanCrew Plus adds voice-to-text, unlimited GIFs, extra customization, more chat folders, and an optional supporter badge.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-section">
+      <div class="container" style="text-align:center; display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <a href="privacy-plancrew.html" class="app-store-btn" style="display:inline-flex;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          View Privacy Policy
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+              <path d="M12 2C12 2 8 7 8 12s4 10 4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M12 2c0 0 4 5 4 10s-4 10-4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M3.5 7h17M3.5 17h17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg><span>Florithm</span></a>
+          <p>Crafting mobile apps that inspire creativity and elevate everyday life.</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__col">
+            <h4>Company</h4><a href="index.html#about">About</a><a href="index.html#features">Features</a><a
+              href="index.html#apps">Our Apps</a>
+          </div>
+          <div class="footer__col">
+            <h4>Legal</h4><a href="privacy.html">Privacy Policy</a>
+          </div>
+          <div class="footer__col">
+            <h4>Connect</h4><a href="index.html#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Florithm LLC. All rights reserved.</p>
+        <p>Made with care in the USA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
