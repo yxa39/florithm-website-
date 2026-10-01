@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yujuan Xie, Ph.D. — Senior iOS Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    @page {
+      size: letter;
+      margin: 5mm 9mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      line-height: 1.27;
+      font-size: 8.0pt;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .resume-container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    header {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 3px;
+      margin-bottom: 4px;
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    h1.name {
+      font-size: 15pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      display: inline-block;
+    }
+
+    .title {
+      font-size: 9.0pt;
+      font-weight: 600;
+      color: #0284c7;
+      display: inline-block;
+      margin-left: 8px;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 7.6pt;
+      color: #475569;
+      margin-top: 2px;
+    }
+
+    .contact-bar a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .divider {
+      color: #cbd5e1;
+    }
+
+    /* SECTION STYLING */
+    section {
+      margin-bottom: 4px;
+    }
+
+    .section-title {
+      font-size: 8.3pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #0f172a;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 1px;
+      margin-bottom: 2.5px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      color: #334155;
+      font-size: 8.05pt;
+      line-height: 1.35;
+      text-align: justify;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5px 8px;
+      font-size: 7.85pt;
+    }
+
+    .skill-cat {
+      font-weight: 700;
+      color: #0f172a;
+      white-space: nowrap;
+    }
+
+    .skill-list {
+      color: #334155;
+    }
+
+    /* EXPERIENCE */
+    .job-card {
+      margin-bottom: 4px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1.5px;
+    }
+
+    .company-name {
+      font-size: 8.6pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .job-role {
+      font-weight: 600;
+      color: #0284c7;
+    }
+
+    .date-location {
+      font-size: 7.5pt;
+      color: #64748b;
+      font-weight: 600;
+    }
+
+    ul.bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul.bullet-list li {
+      position: relative;
+      padding-left: 10px;
+      margin-bottom: 1.5px;
+      font-size: 7.85pt;
+      color: #334155;
+      line-height: 1.30;
+    }
+
+    ul.bullet-list li::before {
+      content: "•";
+      position: absolute;
+      left: 1px;
+      color: #0284c7;
+      font-weight: bold;
+    }
+
+    ul.bullet-list li strong {
+      color: #0f172a;
+      font-weight: 600;
+    }
+
+    /* FLAGSHIP PROJECTS GRID */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px;
+    }
+
+    .p-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 3.5px 6px;
+    }
+
+    .p-card.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .p-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5px;
+    }
+
+    .p-card-title {
+      font-size: 8.2pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .p-badge {
+      font-size: 6.7pt;
+      font-weight: 600;
+      color: #0284c7;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+
+    .p-card-desc {
+      font-size: 7.5pt;
+      color: #475569;
+      margin-bottom: 1.5px;
+      line-height: 1.22;
+    }
+
+    /* TABLE */
+    .portfolio-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 7.5pt;
+      margin-top: 1.5px;
+    }
+
+    .portfolio-table th {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      text-align: left;
+      padding: 2.5px 5px;
+      font-weight: 700;
+      border: 1px solid #e2e8f0;
+    }
+
+    .portfolio-table td {
+      padding: 2.5px 5px;
+      border: 1px solid #e2e8f0;
+      color: #334155;
+    }
+
+    .portfolio-table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    /* EDUCATION */
+    .edu-grid {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.75pt;
+      color: #334155;
+      line-height: 1.3;
+      flex-wrap: wrap;
+      gap: 4px 16px;
+    }
+
+    .edu-item strong {
+      color: #0f172a;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-container">
+
+    <!-- HEADER -->
+    <header>
+      <div class="header-top">
+        <div>
+          <h1 class="name">Yujuan Xie, Ph.D.</h1>
+          <span class="title">Senior iOS Developer / Mobile Software Engineer</span>
+        </div>
+      </div>
+      <div class="contact-bar">
+        <span class="contact-item">📍 34262 Stable Way, Fremont, CA 94555</span>
+        <span class="divider">|</span>
+        <span class="contact-item">📞 <a href="tel:6504403297">(650) 440-3297</a></span>
+        <span class="divider">|</span>
+        <span class="contact-item">✉️ <a href="mailto:yujuanxie39@gmail.com">yujuanxie39@gmail.com</a></span>
+        <span class="divider">|</span>
+        <span class="contact-item">🌐 <a href="https://www.florithm.com">florithm.com</a></span>
+        <span class="divider">|</span>
+        <span class="contact-item">📱 <strong>16+ Published iOS Apps</strong></span>
+      </div>
+    </header>
+
+    <!-- EXECUTIVE SUMMARY -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Accomplished Senior iOS Developer with a Ph.D. analytical background and proven track record of architecting, building, and publishing <strong>16+ commercial iOS applications on the Apple App Store</strong> (Florithm LLC). Combines deep engineering expertise in Swift, SwiftUI, UIKit, Combine, StoreKit 2 monetization, Core ML/Vision, and real-time cloud architectures (Firebase) with doctoral-level computational modeling, algorithmic problem solving, and rigorous data analysis. Expert in 0-to-1 mobile lifecycle execution, 120Hz ProMotion UI optimization, and strict COPPA privacy compliance.
+      </p>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-cat">iOS & Languages:</div>
+        <div class="skill-list">Swift, SwiftUI, UIKit, Combine, Objective-C, TypeScript, JavaScript (ES6+), HTML5/CSS3, Python, C/C++</div>
+        
+        <div class="skill-cat">Apple Frameworks:</div>
+        <div class="skill-list">StoreKit 2 (In-App Purchases & Subscriptions), Core Data, Vision, Core ML, UserNotifications (APNs), LocalAuthentication (Face ID), AVFoundation, Security / Keychain, GCD, Swift Concurrency (async/await, Actors)</div>
+        
+        <div class="skill-cat">Architecture & Patterns:</div>
+        <div class="skill-list">MVVM, Coordinator, Clean Architecture, Reactive Programming, Offline-First / Caching, Native Bridge Plugins (Capacitor/React Native)</div>
+        
+        <div class="skill-cat">Cloud & Backend:</div>
+        <div class="skill-list">Firebase (Cloud Firestore, Functions, Auth, Storage), Real-Time WebSockets, RESTful APIs, Node.js</div>
+        
+        <div class="skill-cat">Tooling & Scientific Computing:</div>
+        <div class="skill-list">Xcode, Instruments (Time Profiler, Allocations, Leaks), TestFlight, App Store Connect, Git/GitHub Actions, XCTest, Statistical Modeling</div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section>
+      <div class="section-title">Engineering & Research Experience</div>
+      
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <span class="company-name">Florithm LLC</span> — <span class="job-role">Founder & Principal iOS Developer</span>
+          </div>
+          <span class="date-location">2019 – Present | Fremont, CA</span>
+        </div>
+        <ul class="bullet-list">
+          <li><strong>End-to-End iOS Product Delivery:</strong> Architected, built, and launched 16 production iOS apps on the Apple App Store across FinTech, Productivity, Education, and Lifestyle, achieving rapid release cycles and 99.9% crash-free sessions.</li>
+          <li><strong>StoreKit 2 & Monetization Architecture:</strong> Integrated native StoreKit 2 workflows for auto-renewable subscriptions, consumables, and non-consumable lifetime passes with automated receipt verification and entitlement tracking.</li>
+          <li><strong>Real-Time Offline-First Sync:</strong> Built high-efficiency mobile data pipelines using Cloud Firestore, local caching, and optimistic UI mutations for instant response under intermittent network conditions.</li>
+          <li><strong>Memory Profiling & Performance:</strong> Leveraged Xcode Instruments (Allocations, Leaks, Time Profiler) to eliminate ARC retain cycles, minimize CPU overhead, and guarantee smooth 120Hz ProMotion scrolling.</li>
+          <li><strong>Security & Child Privacy (COPPA):</strong> Designed zero-friction 6-digit cryptographic hardware pairing protocols enabling children to sync devices without collecting emails, phone numbers, or passwords.</li>
+          <li><strong>Hardware & Media Integration:</strong> Built biometric Face ID authentication via LocalAuthentication, secure Keychain storage, camera pipelines with AVFoundation, and Core ML/Vision client-side color analysis.</li>
+        </ul>
+      </div>
+
+      <div class="job-card">
+        <div class="job-header">
+          <div>
+            <span class="company-name">4D Labs, Simon Fraser University</span> — <span class="job-role">Research Scientist & Quantitative Data Analyst</span>
+          </div>
+          <span class="date-location">2008 – 2013 | Burnaby, BC, Canada</span>
+        </div>
+        <ul class="bullet-list">
+          <li>Applied advanced statistical data analysis, mathematical modeling, and experimental matrices to investigate structural phase transitions and material reliability under Office of Naval Research-funded programs.</li>
+          <li>Authored 3 peer-reviewed scientific publications in premier journals (Physical Review Letters, IEEE Transactions) and won 1st Place at the IEEE International Symposium on Applications of Ferroelectrics.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FLAGSHIP APPLICATIONS -->
+    <section>
+      <div class="section-title">Featured iOS Production Apps & Architectural Highlights</div>
+      
+      <div class="projects-grid">
+        
+        <!-- FamilyBank -->
+        <div class="p-card full-width">
+          <div class="p-card-header">
+            <div class="p-card-title">FamilyBank — Kids Money & Allowance Bank</div>
+            <span class="p-badge">Finance · EdTech · Cloud Sync</span>
+          </div>
+          <div class="p-card-desc">Virtual banking simulation teaching kids compound interest, chore bounties, and financial habits.</div>
+          <ul class="bullet-list">
+            <li><strong>Automated Compound Interest Engine:</strong> Daily interest calculation algorithms crediting ledgers based on parent APY.</li>
+            <li><strong>6-Digit Device Pairing:</strong> Multi-device cryptographic pairing linking child hardware directly without credentials (COPPA compliant).</li>
+            <li><strong>Chore Approvals & StoreKit:</strong> Built real-time parent verification workflow and integrated StoreKit lifetime family unlock.</li>
+          </ul>
+        </div>
+
+        <!-- PlanCrew -->
+        <div class="p-card">
+          <div class="p-card-header">
+            <div class="p-card-title">PlanCrew — Group Chat & Planning</div>
+            <span class="p-badge">Social · Productivity</span>
+          </div>
+          <div class="p-card-desc">Collaborative event planning and group chat platform for crews.</div>
+          <ul class="bullet-list">
+            <li>Real-time chat with threaded replies, reactions, and media caching.</li>
+            <li>Interactive calendar event planning, itineraries, and shared checklists.</li>
+          </ul>
+        </div>
+
+        <!-- My Color Palette -->
+        <div class="p-card">
+          <div class="p-card-header">
+            <div class="p-card-title">My Color Palette: AI Stylist</div>
+            <span class="p-badge">Fashion Tech · Vision AI</span>
+          </div>
+          <div class="p-card-desc">AI-driven color analysis categorizing users into 12 seasonal palettes.</div>
+          <ul class="bullet-list">
+            <li>Client-side colorimetric analysis processing skin tone and undertones.</li>
+            <li>Custom palette visualizers and offline-ready wardrobe tools.</li>
+          </ul>
+        </div>
+
+        <!-- Nexus -->
+        <div class="p-card">
+          <div class="p-card-header">
+            <div class="p-card-title">Nexus — Career Discovery</div>
+            <span class="p-badge">Education · Career</span>
+          </div>
+          <div class="p-card-desc">Psychometric orientation tool utilizing the Holland Code (RIASEC).</div>
+          <ul class="bullet-list">
+            <li>36-question scoring engine mapping personality traits to career paths.</li>
+            <li>Animated radar charts and personality breakdown screens.</li>
+          </ul>
+        </div>
+
+        <!-- Sparking Joy & TapTapTask -->
+        <div class="p-card">
+          <div class="p-card-header">
+            <div class="p-card-title">Sparking Joy & TapTapTask</div>
+            <span class="p-badge">Lifestyle · Gamification</span>
+          </div>
+          <div class="p-card-desc">Mindful decluttering companion & family task rewards systems.</div>
+          <ul class="bullet-list">
+            <li>Category-by-category workflows, milestone rewards, and streaks.</li>
+            <li>Gamified task rewards with customizable goal progress meters.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SUMMARY -->
+    <section>
+      <div class="section-title">App Store Portfolio (16 Published iOS Apps)</div>
+      <table class="portfolio-table">
+        <thead>
+          <tr>
+            <th style="width: 22%;">Domain</th>
+            <th>Production iOS Apps on Apple App Store</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Finance & Family</strong></td>
+            <td><strong>FamilyBank</strong> (Kids Money & Allowance Bank)</td>
+          </tr>
+          <tr>
+            <td><strong>Productivity & Tools</strong></td>
+            <td>ScheduleAround, TapTapTask, Countdowns (Visual Timers), Intervals (Count-up Timer), Plateful+</td>
+          </tr>
+          <tr>
+            <td><strong>Fashion & Creative</strong></td>
+            <td>My Color Palette: AI Stylist, Profile Picture Maker: Avatars</td>
+          </tr>
+          <tr>
+            <td><strong>Education & Literacy</strong></td>
+            <td>Nexus (Career Discovery), RightRead (K-6 Leveled Books), Phonics Cards (5,000+ words), Read with Booki</td>
+          </tr>
+          <tr>
+            <td><strong>Social & Games</strong></td>
+            <td>PlanCrew (Group Chat & Plans), Fleet Keeper+ (Space Arcade), Fish or Bait (Retro Survival), Am I a Narcissist?</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <div class="section-title">Education</div>
+      <div class="edu-grid">
+        <div class="edu-item"><strong>Ph.D., Chemistry</strong> — Simon Fraser University, Canada (2013)</div>
+        <div class="edu-item"><strong>M.Eng., Materials Science</strong> — Hefei University of Technology, China (2008)</div>
+        <div class="edu-item"><strong>B.Eng., Materials Engineering</strong> — Hefei University of Tech (2006, Top 5%)</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
